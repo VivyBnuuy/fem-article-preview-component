@@ -1,5 +1,10 @@
 :root {
-  --gray: #333333;
+  --white: #FFFFFF;
+  --background: #ECF2F8;
+  --dark-blue: #48556A;
+  --light-blue: #6E8098;
+  --very-light-blue: #9DAEC2;
+  --shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
 }
 
 /* makes sizing simpler */
@@ -42,7 +47,7 @@ video {
 
 body {
   margin: 0;
-  background-color: var(--gray);
+  background-color: var(--background);
 }
 
 /*

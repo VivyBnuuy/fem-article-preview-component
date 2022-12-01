@@ -1,0 +1,11 @@
+@use "../util/functions" as util;
+
+// Desktop font sizes
+$desktop-l: util.rem(20);
+$desktop-m: util.rem(13);
+
+// Mobile font sizes
+$mobile-l: util.rem(16);
+
+// Spacing for the Share tooltip
+$tooltip-spacing: util.rem(5);
