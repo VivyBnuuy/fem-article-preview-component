@@ -1,0 +1,21 @@
+// Global forwards
+@forward "global/variables";
+@forward "global/states";
+@forward "global/reset";
+@forward "global/typography";
+
+// Util forwards
+@forward "util/functions";
+
+// Mobile forwards
+@forward "mobile/main";
+
+// Tablet forwards
+/*
+@forward "tablet/typography";
+@forward "tablet/breakpoints";
+@forward "tablet/main";
+*/
+
+// Desktop forwards
+@forward "desktop/breakpoints";

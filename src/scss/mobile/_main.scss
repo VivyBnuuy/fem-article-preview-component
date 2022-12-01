@@ -1,0 +1,12 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "../global/typography" as fonts;
+
+:root {
+    font-size: util.rem(16);
+}
+
+body {
+    margin: 0;
+    background-color: var(--gray);
+}
