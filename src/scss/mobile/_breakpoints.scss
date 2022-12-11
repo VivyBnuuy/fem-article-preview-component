@@ -36,6 +36,7 @@
     }
 }
 
+// Keeps the bottom of the card looking nice on small displays
 @media screen and (max-width: 240px) {
     .card {
         &-bottom {

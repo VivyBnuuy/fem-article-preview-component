@@ -273,6 +273,45 @@ main {
   .card__content-header {
     font-size: 1.25rem;
   }
+  .card-share {
+    display: none;
+    grid-template: 1fr/repeat(2, -webkit-max-content);
+    grid-template: 1fr/repeat(2, max-content);
+    grid-area: 1/2/2/3;
+    justify-self: end;
+    align-self: center;
+    z-index: 10;
+    position: relative;
+    top: 0.75rem;
+    left: 5.0625rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1rem 2.625rem;
+    border-radius: 0.5rem;
+  }
+  .card-share::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    top: 3.25rem;
+    border-left: 0.75rem solid transparent;
+    border-right: 0.75rem solid transparent;
+    border-top: 0.75rem solid var(--dark-blue);
+    border-bottom: 0.75rem solid transparent;
+    transform: translateX(-50%);
+  }
+  .card-share__nav {
+    margin: 0 0 0 1rem;
+  }
+  .card-share__share-container {
+    display: none;
+  }
 }
 /*
 @forward "tablet/typography";

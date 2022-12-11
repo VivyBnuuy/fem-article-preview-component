@@ -2,6 +2,7 @@
 @use "../global/variables" as var;
 @use "../global/typography" as fonts;
 
+// Update the layout to be a row instead of a column
 @media screen and (min-width: 740px) {
     .card {
         grid-template: auto / auto 1fr;
@@ -23,6 +24,57 @@
 
             &-header {
                 font-size: fonts.$desktop-l;
+            }
+        }
+
+        // Change the share nav to be a tooltip for desktop layout
+        &-share {
+            display: none;
+            grid-template: 1fr / repeat(2, max-content);
+            grid-area: 1 / 2 / 2 / 3;
+
+            justify-self: end;
+            align-self: center;
+
+            z-index: 10;
+
+            position: relative;
+
+            top: util.rem(12);
+            left: util.rem(81);
+
+            width: max-content;
+            height: max-content;
+
+            padding: util.rem(16) util.rem(42);
+
+            border-radius: util.rem(8);
+
+            &::after {
+                content: "";
+
+                width: 0px;
+                height: 0px;
+
+                position: absolute;
+
+                left: 50%;
+                top: util.rem(52);
+
+                border-left: util.rem(12) solid transparent;
+                border-right: util.rem(12) solid transparent;
+                border-top: util.rem(12) solid var(--dark-blue);
+                border-bottom: util.rem(12) solid transparent;
+
+                transform: translateX(-50%);
+            }
+
+            &__nav {
+                margin: 0 0 0 util.rem(16);
+            }
+
+            &__share-container {
+                display: none;
             }
         }
     }
