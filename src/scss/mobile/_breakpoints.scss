@@ -1,0 +1,13 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "../global/typography" as fonts;
+
+@media screen and (max-width: 320px) {
+    .card {
+        &__content {
+            grid-area: 2 / 1 / 3 / 2;
+
+            margin-top: 0;
+        }
+    }
+}

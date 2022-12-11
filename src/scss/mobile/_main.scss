@@ -9,8 +9,16 @@
 body {
     margin: 0;
     background-color: var(--background);
+
+    height: 100vh;
+
+    font-family: 'Manrope', sans-serif;
 }
 
 main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
 
+    height: 100vh;
 }

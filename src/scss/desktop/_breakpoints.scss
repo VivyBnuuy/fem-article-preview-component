@@ -1,1 +1,29 @@
 @use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "../global/typography" as fonts;
+
+@media screen and (min-width: 740px) {
+    .card {
+        grid-template: auto / auto 1fr;
+
+        max-width: util.rem(730);
+
+        &__img {
+            grid-area: 1 / 1 / 2 / 2;
+
+            width: util.rem(285);
+            height: util.rem(280);
+            
+            border-radius: util.rem(8) 0 0 util.rem(8);
+        }
+
+        &__content {
+            grid-area: 1 / 2 / 2 / 3;
+            margin: 0;
+
+            &-header {
+                font-size: fonts.$desktop-l;
+            }
+        }
+    }
+}

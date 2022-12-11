@@ -1,0 +1,24 @@
+.card {
+    &-bottom__share-container:hover {
+        cursor: pointer;
+
+        color: var(--background);
+
+        background-color: var(--light-blue);
+    }
+
+    &-share {
+        &__li:hover {
+            cursor: pointer;
+            
+            color: var(--very-light-blue);
+        }
+
+        &__share-container:hover {
+            cursor: pointer;
+
+            background-color: var(--background);
+            color: var(--light-blue);
+        }
+    }
+}
