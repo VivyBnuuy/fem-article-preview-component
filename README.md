@@ -19,6 +19,6 @@ For this challenge, I used the following:
 - I also used an img element instead of a background image to crop the picture exactly like it is in the design - I am not sure if there was a way to achieve the same result this way, but I wanted to make the image accessible instead of using a background image.
 
 # The End
-Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or left a comment on my <a href="https://www.frontendmentor.io/solutions/article-preview-component-uAHFxmsPHZ" target="_blank">solution page</a> - I'm always looking to improve!
+Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or opened an issue if there's anything that needs fixing; I'm always looking to improve!
 
 Happy coding!
